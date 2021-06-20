@@ -9,10 +9,11 @@ int polindrom(unsigned int num);
 int main()
 {
 
-    unsigned int a, b, c, max = 0;
-    for (a = 100; a <= 999; a++)
+    unsigned int a, b, c, d, max = 0;
+    
+    for (a = 101; a <= 999; a++)
     {
-        for (b = 100; b <= 999; b++)
+        for (b = 101 + d; b <= 999; b++)
         {
             c = a * b;                   // tüm çarpımları fonksiyona yollayıp kontrol ediyoruz
             if (polindrom(c) && c > max) // her defasında max'ı kontrol ediyoruz.
